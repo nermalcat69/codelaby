@@ -4,9 +4,7 @@ import { useState } from "react"
 import { useChat } from "ai/react"
 import { Toaster, toast } from "react-hot-toast"
 
-import Info from "@/components/globals/info"
-
-import DropDown, { EquationType } from "./DropDown"
+import { EquationType } from "./DropDown"
 import User from "./globals/User"
 
 export function Main() {
@@ -124,7 +122,6 @@ export function Main() {
           </div>
         </div>
       </div>
-      <Info />
     </section>
   )
 }
