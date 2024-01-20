@@ -28,14 +28,14 @@ export function Main() {
   const generatedEquations = lastMessage?.role === "assistant" ? lastMessage.content : null;
   return (
     <section className="py-2">
-      <div className="flex justify-center border border-gray-200 mt-8 p-6  rounded-md gap-6 my-4">
+      <div className="flex justify-center mt-8 p-6  rounded-md gap-6 my-4">
         <div className="flex flex-col space-x-4 space-y-12">
           <form className="max-w-xl w-full" onSubmit={onSubmit}>
             <div className="flex mt-10 items-center space-x-3">
               <p className="text-left font-medium">
-                Paste your equation below{" "}
+                Paste your code below{" "}
                 <span className="text-slate-500">
-                  (or just write ur own equation)
+                  (or just type it)
                 </span>
                 .
               </p>
@@ -45,19 +45,14 @@ export function Main() {
               onChange={handleInputChange}
               rows={2}
               className="w-full resize-none max-w rounded-md border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 my-5"
-              placeholder={"solve an equation for me."}
+              placeholder={"explain me a piece of code."}
             />
-            <div className="flex mb-5 items-center space-x-3">
-              <p className="text-left font-medium">
-                Select the type of equation.
-              </p>
-            </div>
             {!isLoading && (
               <button
                 className="bg-gray-800 hover:bg-gray-900 text-gray-50 px-4 py-2 rounded-md mt-8 duration-200 font-medium sm:mt-10 hover:shadow-inner w-full"
                 type="submit"
               >
-                Solve My Equation &rarr;
+                Explain me the Code &rarr;
               </button>
             )}
             {isLoading && (

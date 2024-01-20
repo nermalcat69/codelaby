@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Kato",
-  description: "One Place for your algebra questions :)",
+  name: "Codelably",
+  description: "codelably explains your code hehe :)",
   mainNav: [
     {
       title: "Playground",
@@ -10,7 +10,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    contribute: "https://github.com/nermalcat69/Kato",
+    contribute: "https://github.com/nermalcat69/Codelably",
     twitter: "https://twitter.com/nermalcat69",
     github: "https://github.com/nermalcat69",
   },

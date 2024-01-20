@@ -31,7 +31,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body className={cn("min-h-screen bg-background font-sans antialiased")}>
         <Header />
-
         <div className="relative flex flex-col min-h-screen">
           <div className="flex-1">{children}</div>
         </div>
