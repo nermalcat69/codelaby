@@ -30,7 +30,7 @@ dependencies:
     specifier: ^1.2.1
     version: 1.2.1
   geist:
-    specifier: ^1.0.0
+    specifier: ^1.2.1
     version: 1.2.1(next@14.1.0)
   lucide-react:
     specifier: ^0.294.0
